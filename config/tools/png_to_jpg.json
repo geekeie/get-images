@@ -1,0 +1,14 @@
+{
+  "tool": {
+    "name": "PNG to JPG Converter",
+    "description": "Convert PNG images to JPG format effectively.",
+    "endpoint": "/png-to-jpg",
+    "method": "POST",
+    "input": {
+      "image": "file(PNG format)"
+    },
+    "output": {
+      "image": "file(JPG format)"
+    }
+  }
+}

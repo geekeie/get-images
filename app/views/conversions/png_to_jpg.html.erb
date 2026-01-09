@@ -1,0 +1,14 @@
+<h1>PNG to JPG Converter</h1>
+
+<p>Use this tool to convert PNG images into JPG format.</p>
+
+<%= form_with url: '/png-to-jpg', method: :post, local: true, multipart: true do |form| %>
+  <div>
+    <%= form.label :image, 'Select PNG file:' %>
+    <%= form.file_field :image %>
+  </div>
+
+  <div>
+    <%= form.submit 'Convert to JPG' %>
+  </div>
+<% end %>
